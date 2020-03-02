@@ -1,0 +1,11 @@
+# An entry that lists all the workers defined
+worker.list=worker1,worker2
+
+# Entries that define the host and port associated with these workers
+worker.worker1.host=IP_TO_SET_1
+worker.worker1.port=AJP_PORT_1
+worker.worker1.type=ajp13
+
+worker.worker2.host=IP_TO_SET_2
+worker.worker2.port=AJP_PORT_2
+worker.worker2.type=ajp13

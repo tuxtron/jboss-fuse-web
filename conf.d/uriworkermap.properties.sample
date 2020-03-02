@@ -1,0 +1,5 @@
+# Mapping test
+/testapp1=worker1
+/testapp1/*=worker1
+/testapp2=worker2
+/testapp2/*=worker2
