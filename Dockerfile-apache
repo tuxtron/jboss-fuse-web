@@ -26,20 +26,12 @@ ADD conf/httpd.conf /etc/httpd/conf/httpd.conf
 RUN mkdir /var/www/run
 RUN rm -rf /run/httpd/*
 RUN rm -rf /etc/httpd/logs/*
-#
-#RUN echo "LoadModule mpm_event_module modules/mod_mpm_event.so" >> /etc/httpd/conf/httpd.conf 
-#RUN echo "LoadModule request_module modules/mod_request.so"  >> /etc/httpd/conf/httpd.conf
-#RUN echo "ServerName localhost" >> /etc/httpd/conf/httpd.conf
 
 EXPOSE 8080 6666 8880 18182 8443
 
 RUN rm -rf /run/httpd/* /tmp/httpd*
 RUN chmod -R 777 /run/httpd
 RUN chmod -R 777 /etc/httpd/logs/
-#RUN mkdir -p /opt/jws-3.0/httpd/run/
-#RUN mkdir -p /opt/jws-3.0/httpd/www/
-#RUN mkdir -p /opt/jws-3.0/httpd/sbin/
-#RUN touch /opt/jws-3.0/httpd/sbin/httpd-ssl-pass-dialog
 RUN rm -f /etc/httpd/conf.d/ssl.conf
 
 
