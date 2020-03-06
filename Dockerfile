@@ -38,5 +38,5 @@ RUN chmod -R 777 /etc/httpd/logs/
 RUN rm -f /etc/httpd/conf.d/ssl.conf
 
 
-#CMD ["/usr/sbin/apachectl", "-DFOREGROUND"]
-CMD ["/run-httpd.sh"]
+CMD ["/usr/sbin/apachectl", "-DFOREGROUND"]
+#CMD ["/run-httpd.sh"]
