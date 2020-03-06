@@ -28,6 +28,7 @@ RUN rm -rf /run/httpd/*
 RUN rm -rf /etc/httpd/logs/*
 COPY modules /etc/httpd/modules/
 RUN chmod 775 /etc/httpd/modules/*
+RUN touch /usr/share/httpd/noindex/index.html
 
 EXPOSE 8080 6666 8880 18182 8443
 
